@@ -4,9 +4,9 @@
 
 <br/>
 
-# Gatsby Starter Novela
+# This blog
 
-With minimal styling and maximum features — including multiple homepage layouts, built-in social sharing and dark mode — Novela makes it easy to start publishing beautiful articles and stories with Gatsby.
+This blog is based on Gatsby.js framework. It uses the theme Novela from https://www.narative.co
 
 Novela is built by the team at [Narative](https://www.narative.co), and built for everyone that loves the web.
 
