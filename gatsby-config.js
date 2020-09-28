@@ -1,33 +1,37 @@
+require('dotenv').config();
+
+
+
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Romanian living in 🇩🇰 Copenhagen.`,
+    name: `Sorin Cojocaru`,
+    siteUrl: `https://sorincojocaru.com`,
+    description: `Sorin Cojocaru - Romanian living in Copenhagen. Entrepreneur. Digital wizard. Globetrotter.`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `Romanian living in 🇩🇰 Copenhagen. Entrepreneur. Digital wizard. Globetrotter.`,
       maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
+        url: `https://twitter.com/sheepcoatmaker`,
       },
       {
         name: `github`,
-        url: `https://github.com/narative`,
+        url: `https://github.com/scoj`,
       },
       {
         name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://www.instagram.com/sorincph`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
+        url: `https://www.linkedin.com/in/scojocaru/`,
       },
       {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        name: `facebook`,
+        url: `https://www.facebook.com/sorincph/`,
       },
     ],
   },
@@ -40,8 +44,8 @@ module.exports = {
         basePath: "/",
         authorsPage: true,
         sources: {
-          local: true,
-          // contentful: true,
+          contentful: true,
+          local: false,
         },
       },
     },
@@ -62,5 +66,20 @@ module.exports = {
       options: {
       },
     },
+      {
+    resolve: 'gatsby-source-contentful',
+    options: {
+      spaceId: process.env.CONTENTFUL_SPACE_ID,
+      accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+    },
+  },
+  /*{
+    resolve: '@narative/gatsby-theme-novela',
+    options: {
+      sources: {
+        contentful: true,
+      }
+    }
+  },*/
   ],
 };
