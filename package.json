@@ -10,7 +10,7 @@
     "proxy": "netlify-cms-proxy-server"
   },
   "dependencies": {
-    "@narative/gatsby-theme-novela": "^0.*",
+    "@narative/gatsby-theme-novela": "scoj/gatsby-theme-novela",
     "dotenv": "^8.2.0",
     "gatsby": "^2.24.65",
     "gatsby-plugin-manifest": "^2.2.4",
