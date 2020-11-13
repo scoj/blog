@@ -1,7 +1,7 @@
 ---
 title: Relocating to Copenhagen
 author: Sorin Cojocaru
-date: '2013-01-16'
+date: '2020-01-16'
 excerpt: >-
   In 2012 I decided to leave Romania and start living the Scandinavian dream.
   And I never stopped dreaming since.
