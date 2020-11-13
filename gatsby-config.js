@@ -68,6 +68,14 @@ module.exports = {
       accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
     },
   },
+  	  {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+        // The property ID; the tracking code won't be generated without it
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    },
+},
+
   /*{
     resolve: '@narative/gatsby-theme-novela',
     options: {
